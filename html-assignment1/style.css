@@ -1,14 +1,46 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 18px;
 }
 
+/* change color in body */
+body p, body p3, body h2, body h3, body li {
+    color:#8B4513;
+}
+
+/* background blockquote*/
+.blockquote-text { 
+   background-color: #e3e2e1; 
+}
+
+/* break lines same color as title */
+hr { 
+    border-top: solid #5E2605;
+}
+
 header, footer {
-    background-color: blue;
+    background-color: rgb(188, 184, 138);
+}
+
+/* space for background */
+header { 
+    /* sapcing top & bottom */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    padding-top: 2px;
+    padding-bottom: 1px;
+    }
+
+/* color only footer*/
+.footer-text {
+    color: #F0EAD6
 }
 
 .site-title {
-    color: red;
+    color: rgb(85, 107, 47);
 }
 
 #my-image {
@@ -20,15 +52,28 @@ ul {
 }
 
 li:nth-child(odd) {
-    background: cornflowerblue;
+    background: #ECEDD2;
 }
 
 a {
     text-decoration: none;
-    background-color: aqua;
-    border: 2px solid brown;
+    background-color:#B3A394; 
+    border: 2px solid #8B4513;
+    /* add space around the text */
+    padding: 10px 20px;
+    /* make it rounded */
+    border-radius: 12px;
+    /* makes it work or effective */
+    display: inline-block;
+    /* Transition effect */
+    transition: background-color 0.3s ease;
+    /* text color */
+    color:#5E2605;
+    /* color to transition */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a:hover, a:focus {
-    background-color: aquamarine;
+    background-color:#8B4513;
+    color:#F0EAD6;
 }
