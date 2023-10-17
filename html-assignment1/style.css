@@ -1,0 +1,34 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: blue;
+}
+
+.site-title {
+    color: red;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+ul {
+    list-style: square;
+}
+
+li:nth-child(odd) {
+    background: cornflowerblue;
+}
+
+a {
+    text-decoration: none;
+    background-color: aqua;
+    border: 2px solid brown;
+}
+
+a:hover, a:focus {
+    background-color: aquamarine;
+}
