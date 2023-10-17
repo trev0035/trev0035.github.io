@@ -41,10 +41,51 @@
                 <section>
                     <h3>We would love to hear from you!</h3>
                     <!-- Adding a form -->
-                    <form action="thanks.html"></form>
+                    <form action="thanks.html" method="post">
+                        <div>
+                            <label for="fullname">Trevs</label>
+                            <input type="text" id="fullname" placeholder="Jane/John Doe">
+                        </div>
+                        <div>
+                            <label for="youremail">Email</label>
+                            <input type="email" id="youremail" placeholder="Algonquin Email" value="@algonquinlive.com" required>
+                        </div>
+                        <div>
+                            <label for="message"></label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <div>
+                            <label for="row">Row</label>
+                            <select name="row" id="row">
+                            <option value="center" selected>Center Row</option>
+                            <option value="back">Back Row</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h3>Have you been here before</h3>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="past" id="yes">
+
+                            <label for="no">No</label>
+                            <input type="radio" name="past" id="no">
+                        </div>
+                        <div>
+                            <h3>Policies</h3>
+                            <input type="checkbox" name="Policies" id="Policies">
+                            <label for="Policies">I agree to the terms and conditions.</label>
+                        </div>
+                        <button type="button">Submit</button>
+                    </form>
                 </section>
             </main>
         </header>
-    </header>
+        <main>
+
+        </main>
+        <footer>
+            <!-- Special symbols for an Html can be found by googling HTML entities -->
+            &copy; Copyright Trevs & Merrien Coffee Shop, 2023
+        </footer>
 </body>
+
 </html>
