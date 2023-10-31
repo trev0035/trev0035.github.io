@@ -1,0 +1,27 @@
+                /* Titles (H1) */
+h1 {
+    font-family: 'Stretch Pro', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2rem;
+    letter-spacing: 0;
+  }
+  
+                /* Subtitles (H2) */
+  h2 {
+    font-family: 'Avenir Medium', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.0rem;
+    letter-spacing: 0;
+  }
+  
+                /* Body Text */
+  p {
+    font-family: 'Avenir Book', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.0rem;
+    letter-spacing: 0;
+  }
+  

@@ -1,0 +1,184 @@
+/* CSS for the entire page */
+
+body {
+    margin: 0;
+    background-color: #AAD4CF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS for the main container */
+
+.container {
+    margin: 0 auto 8px;
+    padding: 0 0 20px;
+    background-color: #D4E9E7;
+    width: 75%;
+    min-height: 95vh;
+    box-sizing: border-box;
+}
+
+/* CSS for the main content area */
+
+main {
+    padding: 20px;
+}
+
+/* CSS for the header section */
+
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+header h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+    font-weight: lighter;
+}
+
+/* CSS for the navigation menu */
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CSS for main content sections */
+
+main {
+    margin: 0 -15px;
+}
+
+main section {
+    display: block;
+}
+
+main section img {
+    float: left;
+    width: 140px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+main section h2, main section h3 {
+    text-align: left;
+    align-self: flex-start;
+    font-weight: normal;
+}
+
+main section h2 {
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+main section h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+main section p, li {
+    font-size: 9px;
+}
+
+main section p {
+    line-height: 12px;
+}
+
+main section ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS for the contact form */
+
+form {
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form fieldset {
+    border: none;
+    margin: 0 0;
+    padding: 0;
+}
+
+form label,
+form input,
+form textarea,
+form select {
+    width: 100%;
+    border: none;
+}
+
+form label {
+    font-size: 10px;
+}
+
+form legend {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+}
+
+form button {
+    grid-column: 1;
+    align-self: flex-start;
+    padding: 7px 5px;
+    font-size: 8px;
+    text-transform: uppercase;
+    background-color: #D4E9E7;
+    border: 1px solid black;
+}
+
+/* CSS for the footer */
+
+footer {
+    text-align: right;
+    font-size: 8px;
+    padding-right: 15px;
+    margin: -10px 0;
+}

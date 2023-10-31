@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for responsive design and character set -->
+    <!-- The meta tags provide information about the character set and responsive design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Home</title>
+    <!-- Link to external stylesheet -->
+    <!-- This links to an external CSS file called 'style.css'. -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Main container div -->
+    <!-- This div contains the entire page content. -->
+    <div class="container">
+        <!-- Header section containing site title, image and navigation -->
+        <header>
+            <!-- Site title -->
+            <h1>Lone Starfish</h1>
+            <!-- Image of a starfish -->
+            <img src="images/lone-starfish-wide.jpg" alt="A lone starfish">
+            <!-- Navigation menu -->
+            <nav aria-label="Main navigation">
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#story">Story</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content area -->
+        <main>
+            <!-- Article section with heading, image and text -->
+            <section>
+                <!-- Heading for the article section -->
+                <h2>Life of a Starfish</h2>
+                <!-- Image within the article -->
+                <img src="images/lone-starfish.jpg" alt="A lone starfish">               
+                <!-- Article text -->
+                <p>
+                    <!-- Article text content -->
+                    Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+                </p>
+            </section>
+
+            <!-- Facts section with heading and list of facts -->
+            <section>
+                <!-- Heading for the facts section -->
+                <h3>Facts About Starfish</h3>
+                <!-- Unordered list for facts -->
+                <ul>
+                    <!-- List items with facts -->
+                    <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                    <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                </ul>
+            </section>
+
+            <!-- Contact form section with heading and form elements -->
+            <section>
+                <!-- Heading for the contact form section -->
+                <h3>Contact to learn more</h3>
+                <!-- Form for user input -->
+                <form action="" method="GET">
+                    <!-- Input fields within fieldsets -->
+                    <fieldset>
+                        <label for="name">Your Name</label>
+                        <input id="name" name="name" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" name="email">
+                    </fieldset>
+                    <fieldset>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" cols="30" rows="3"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <!-- Radio button group for visit choice -->
+                        <legend>Would you like to visit the starfish?</legend>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="choice" value="yes" id="yes">
+                            </div>
+                            <div class="radio-item">
+                                <label for="no">No</label>
+                                <input type="radio" name="choice" value="no" id="no">
+                            </div>
+                            <div class="radio-item">
+                                <label for="maybe">Maybe</label>
+                                <input type="radio" name="choice" value="maybe" id="maybe">
+                            </div>
+                        </div>               
+                    </fieldset>
+                    <!-- Submit button -->
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer section with copyright text -->
+        <footer>
+            <!-- Copyright text -->
+            <p>&copy; Lone Starfish.</p>
+        </footer>
+    </div>
+</body>
+</html>
