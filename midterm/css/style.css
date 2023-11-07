@@ -6,7 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CSS for the main container */
+/* main container */
 
 .container {
     margin: 0 auto 8px;
@@ -17,13 +17,13 @@ body {
     box-sizing: border-box;
 }
 
-/* CSS for the main content area */
+/* main content area */
 
 main {
     padding: 20px;
 }
 
-/* CSS for the header section */
+/* header section */
 
 header {
     position: relative;
@@ -46,7 +46,7 @@ header h1 {
     font-weight: lighter;
 }
 
-/* CSS for the navigation menu */
+/* navigation menu */
 
 nav ul {
     display: grid;
@@ -74,7 +74,7 @@ nav a {
     color: inherit;
 }
 
-/* CSS for main content sections */
+/* main content sections */
 
 main {
     margin: 0 -15px;
@@ -121,7 +121,7 @@ main section ul {
     padding: 0;
 }
 
-/* CSS for the contact form */
+/* contact form */
 
 form {
     border: 1px solid black;
@@ -174,7 +174,7 @@ form button {
     border: 1px solid black;
 }
 
-/* CSS for the footer */
+/* the footer */
 
 footer {
     text-align: right;
