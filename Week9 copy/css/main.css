@@ -99,6 +99,27 @@ p {
     text-align: center;
     text-transform: uppercase;
 }
+/*************** Nav ************/
+.nav-list {
+    border-bottom: 1px solid grey;
+}
+
+/************ LoVe HAte **********/
+
+.nav-list a, 
+.nav-list :link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00add8;
+
+}
 
 /* ************ Mobile App Section*********** */
 .btn {
@@ -112,6 +133,19 @@ p {
 .btn:focus {
     background-color: #00add8;
     color: inherit;
+}
+
+/**************** Action Section *********************/
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 /* *********FOOTER STYLES************ */
@@ -147,6 +181,20 @@ p {
         color: white;
     }
 
+    /* *********FOOTER STYLES************ */
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+    .nav-list li :last-child {
+        border: none;
+    }
+
     /*********** App Section *************/
     .app img {
         width: 40%;
@@ -156,5 +204,14 @@ p {
     .app .btn {
         float: right;
     }
-
  }
+
+/* ***************************
+       MEDIA QUEry 
+***************************** */
+
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 20%
+    }
+}
