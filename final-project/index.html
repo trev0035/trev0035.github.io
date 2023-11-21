@@ -26,29 +26,72 @@
     <main>
 
 <!------------------------ Welcome Section ------------------>
-        <section id="hero">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Your introductory text here...</p>
-            <a href="#contact" class="btn-connect">Connect with us</a>
-        </section>
+ <section id="hero">
+     <h1>Welcome to Three Star Media</h1>
+     <p>Your introductory text here...</p>
+     <a href="#contact" class="btn-connect">Connect with us</a>
+    </section>
         
  <!------------------------ About Us Section ------------------> 
-        <section id="about">
-        <h2>About Us</h2>
-        <p>About Us content...</p>
-        <a href="#learn-more" class="btn-learn-more">Learn More</a>
-    </section>
+ <section id="about">
+    <div class="about-container">
+       
+        <div class="about-image">
+            <img src="images/about-us.jpg" alt="About Us">
+        </div>
+
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>About Us content...</p>
+            <a href="#learn-more" class="btn-learn-more">Learn More</a>
+        </div>
+    </div>
+</section>
     
 <!--------------------- Services Section ------------------> 
-    <section id="services">
-        <article class="service">
-            <h3>Digital Transformation</h3>
-            <p>Service description...</p>
-            <a href="#digital-plans" class="btn-services">Digital Plans</a>
-        </article>
-        <!-- Repeat for each service -->
-    </section>
-</main>
+<section id="services">
+
+    <!--Digital transformation-->
+    <article class="service">
+        <img src="images/digital.jpg" alt="Digital Transformation">
+        <h3>Digital Transformation</h3>
+        <p>Service description...</p>
+        <a href="#digital-plans" class="btn-services">Digital Plans</a>
+    </article>
+
+    <!--Marketing-->
+    <article class="service">
+        <img src="images/marketing.jpg" alt="Marketing">
+        <h3>Marketing</h3>
+        <p>Service description...</p>
+        <a href="#marketing-plans" class="btn-services">Marketing Plans</a>
+    </article>
+
+    <!--Video Production-->
+    <article class="service">
+        <img src="images/video.jpg" alt="Video Production">
+        <h3>Video Production</h3>
+        <p>Service description...</p>
+        <a href="#Video-plans" class="btn-services">Video Plans</a>
+    </article>
+
+    <!--Web Development-->
+    <article class="service">
+        <img src="images/web.jpg" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>Service description...</p>
+        <a href="#Web-plans" class="btn-services">Web Plans</a>
+    </article>
+
+    <!--Print-->
+    <article class="service">
+        <img src="images/print.jpg" alt="Print">
+        <h3>Print</h3>
+        <p>Service description...</p>
+        <a href="#Print-plans" class="btn-services">Print Plans</a>
+    </article>
+
+</section>
 
 <!--------------------- Vision Section ------------------> 
 <section id="vision">
@@ -61,12 +104,28 @@
 
 <section id="ourteam">
     <h2>Our Team</h2>
+    <!--Bob Rite-->
     <div class="team-member">
-        <img src="images/john.jpg" alt="John Doe">
-        <h3>John Doe</h3>
-        <p>CEO and Co-owner</p>
+        <img src="images/bob.jpg" alt="Bob Rite" class="team-photo">
+        <div class="team-info">
+            <h3>Bob Rite</h3>
+            <p class="title">CFO and Co-owner</p>
+            <hr class="team-divider"> 
+            <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
     </div>
-    <!-- Repeat for each team member -->
+
+    <!--John-->
+    <div class="team-member">
+        <img src="images/john.jpg" alt="John Doe" class="team-photo">
+        <div class="team-info">
+            <h3>John Doe</h3>
+            <p class="title">CEO and Co-owner</p>
+            <hr class="team-divider"> 
+            <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+    </div>
+
 </section>
 
 <!--------------------- Contact Section ------------------>
@@ -82,11 +141,28 @@
     </div>
     <div class="location">
         <h2>Location</h2>
-        <!-- Insert Google Maps iframe here -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9444551569554!2d-75.75492570000003!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1700543676514!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="hours-of-operation">
         <h2>Hours of operation</h2>
-        <!-- Insert hours of operation table here -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>9 AM - 6 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </section>
 
