@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
-    <link rel="stylesheet" href="css/main.css">
-<!-- add css here -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 <body>
 
-<!------------------------ Header Section ------------------>
+<!-- Header Section -->
      <header>
         <div class="logo">
             <img src="images/logo.png" alt="Three Star Media Logo">
@@ -23,18 +22,24 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <form action="/search" method="get" class="search-bar">
+            <input type="text" name="query" placeholder="Search" aria-label="Search">
+            <button type="submit" aria-label="Submit Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
     </header>
 
     <main>
 
-<!------------------------ Welcome Section ------------------>
+<!-- Welcome Section -->
  <section id="hero">
      <h1>Welcome to Three Star Media</h1>
      <p>Introductory text fill...</p>
      <a href="#contact" class="btn-connect">Connect with us</a>
     </section>
         
- <!------------------------ About Us Section ------------------> 
+ <!-- About Us Section --> 
  <section id="about">
     <div class="about-container">
        
@@ -50,8 +55,9 @@
     </div>
 </section>
     
-<!--------------------- Services Section ------------------> 
+<!-- Services Section --> 
 <section id="services">
+    <h2>Our Services</h2>
 
     <!--Digital transformation-->
     <article class="service">
@@ -95,27 +101,17 @@
 
 </section>
 
-<!--------------------- Vision Section ------------------> 
+<!-- Vision Section --> 
 <section id="vision">
     <h2>Our Vision</h2>
     <p>Vision content...</p>
     <a href="#learn-more-vision" class="btn-learn-more">Learn More</a>
 </section> 
 
-<!--------------------- Our Team Section ------------------> 
+<!-- Our Team Section --> 
 
 <section id="ourteam">
     <h2>Our Team</h2>
-    <!--Bob Rite-->
-    <div class="team-member">
-        <img src="images/bob.jpg" alt="Bob Rite" class="team-photo">
-        <div class="team-info">
-            <h3>Bob Rite</h3>
-            <p class="title">CFO and Co-owner</p>
-            <hr class="team-divider"> 
-            <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        </div>
-    </div>
 
     <!--John-->
     <div class="team-member">
@@ -128,9 +124,20 @@
         </div>
     </div>
 
+    <!--Bob Rite-->
+    <div class="team-member">
+        <img src="images/bob.jpg" alt="Bob Rite" class="team-photo">
+        <div class="team-info">
+            <h3>Bob Rite</h3>
+            <p class="title">CFO and Co-owner</p>
+            <hr class="team-divider"> 
+            <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+    </div>
+
 </section>
 
-<!--------------------- Contact Section ------------------>
+<!-- Contact Section -->
 <section id="contact">
     <div class="contact-form">
         <h2>Send us a message</h2>
@@ -170,11 +177,11 @@
 
 </main>
 
- <!--------------------- Footer ----------------------->
+ <!-- Footer -->
  
  <footer>
      <p>&copy; Copyright Three Star Media, 2020</p>
-      <p>All images are taken from Unsplash</p>
+      <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
 </footer> 
 
 </body>
