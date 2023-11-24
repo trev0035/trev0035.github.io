@@ -1,0 +1,261 @@
+body, h1, h2, h3, p, a, form, section, article {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-connect, .btn-services, .btn-learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc; /* Example blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Utilize Flexbox for layouts */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*****************************
+      HEADER SECTION STYLES 
+ *****************************/
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333; /* Dark background for the header */
+    padding: 1rem;
+}
+
+.logo img {
+    height: 60px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adjust the space between the nav items */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: left;
+    color: #FFA500; /* Light text for dark background */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc; /* Adjust border as needed */
+    border-radius: 4px;
+}
+
+.search-bar button {
+    background: #FFA500; /* Gold background */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+
+/*****************************
+      WELCOME SECTION STYLES 
+******************************/
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    padding: 2rem;
+    background-image: url('/final-project/images/main-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Ensure hero content fits within the viewport */
+#info h1 {
+    margin-top: 0; /* Remove default margin */
+}
+
+#info p {
+    margin-bottom: 1rem;
+}
+
+.btn-connect {
+    padding: 10px 20px;
+    background-color: #FFA500; /* Adjust button background */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-connect:hover {
+    background-color: #E59400; /* Darken button on hover */
+}
+
+
+
+/*****************************
+      ABOUT SECTION STYLES 
+******************************/
+#about {
+    display: flex;
+    align-items: center;
+    background-color: #f3daa0; 
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Use 100% width to fill the section */
+  }
+  
+  .about-image {
+    flex: 1; /* Take up half the space in the flex container */
+    padding-right: 20px; /* Add some space between the image and the text */
+  }
+  
+  .about-image img {
+    width: 100%; /* Make image responsive */
+    max-width: 600px; /* You can set a max-width to prevent the image from being too large */
+    height: auto; /* Keep the aspect ratio of the image */
+  }
+  
+  .about-content {
+    flex: 1; /* Take up the remaining half */
+    padding-left: 20px; /* Add some space between the text and the image */
+  }
+  
+  .about-content h2 {
+    color: #000000; 
+    margin-bottom: 10px; /* Space after the heading */
+  }
+  
+  .about-content p {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+
+   /*****************************
+      SERVICES SECTION STYLES 
+******************************/
+#services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-auto-rows: minmax(200px, auto); /* Each row has a minimum height but can grow as needed */
+    gap: 20px; /* Spacing between items */
+    max-width: 1200px; /* Max width of the container */
+    margin: 0 auto; /* Centers the container with automatic margins on both sides */
+    padding: 20px; /* Padding around the entire grid */
+}
+
+.service {
+    background: #ffffff; /* Sets the background to white */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between children */
+    padding: 16px; /* Padding inside each service block */
+}
+
+.service img {
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    object-fit: cover; /* Ensures the images cover the area without stretching */
+}
+
+.service h3 {
+    color: #333; /* Sets the text color for the heading */
+}
+
+.service p {
+    color: #666; /* Sets the text color for the paragraph */
+}
+
+.btn-services {
+    background-color: #0066cc; /* Example blue color for the button */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-services:hover {
+    background-color: #0055a4; /* Darker blue on hover */
+}
+
+  
+ /*****************************
+      VISION SECTION STYLES 
+******************************/
+#vision {
+    background: url('/final-project/images/vision.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0; /* Adjust padding to match your design */
+    color: white; /* This assumes your text is white as per the mockup */
+    text-align: left; /* Aligns text to the center */
+  }
+  
+  #vision h2 {
+    font-size: 2em; /* Adjust the size as needed */
+  }
+  
+  #vision p {
+    font-size: 1em; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Adds space below the paragraph */
+  }
+  
+  .btn-learn-more {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #0e1520; 
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 1em; /* Adjust the size as needed */
+  }
+  
+  /* Hover effect for the button */
+  .btn-learn-more:hover {
+    background-color: #333333; /* Darkens the button on hover, adjust color as needed */
+  }
+  
