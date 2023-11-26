@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- icon search bar ref  --> <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 <body>
 
-<!-- Header Section -->
+<!-- HEADER SECTION -->
      <header>
         <div class="logo">
             <img src="images/logo.png" alt="Three Star Media Logo">
         </div>
+        <!-- Navigation Menu -->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -23,6 +24,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- Search Bar Form -->
         <form action="/search" method="get" class="search-bar">
             <input type="text" name="query" placeholder="Search" aria-label="Search">
             <button type="submit" aria-label="Submit Search">
@@ -32,14 +34,15 @@
     </header>
 
     <main> 
-
-        <!-- Welcome Section -->
+        
+        <!-- WELCOME SECTION -->
         <div id="info">
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque,recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
             <a href="#contact" class="btn-connect">Connect with us</a>
         </div>    
- <!-- About Us Section --> 
+
+ <!-- ABOUT US SECTION --> 
  <section id="about">
     <div class="about-container">
        
@@ -55,10 +58,12 @@
     </div>
 </section>
     
-<!-- Services Section --> 
+<!-- SERVICES SECTION --> 
 <section id="services">
     <h2>Our Services</h2>
-
+    
+    <!-- starts div with grid services  -->
+    <div class="grid-services">
     <!--Digital transformation-->
     <article class="service">
         <img src="images/digital.jpg" alt="Digital Transformation">
@@ -98,17 +103,18 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vel, rem inventore quo tempora animi mollitia aque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
         <a href="#Print-plans" class="btn-services">Print Plans</a>
     </article>
-
+</div> 
+<!-- Ends div with grid services -->
 </section>
 
-<!-- Vision Section --> 
+<!-- VISION SECTION --> 
 <section id="vision">
     <h2>Our Vision</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptatem deleniti lure, sir, accusantium rerum est commodi niam tempora perspiciatis nobis officiis fugiat eque. Veritatis exercitationem delectus ex ab laudantium.</p>
     <a href="#learn-more-vision" class="btn-learn-more">Learn More</a>
 </section> 
 
-<!-- Our Team Section --> 
+<!-- OUR TEAM SECTION --> 
 
 <section id="ourteam">
     <h2>Our Team</h2>
@@ -137,17 +143,26 @@
 
 </section>
 
-<!-- Contact Section -->
+<!-- CONTACT SECTION -->
 <section id="contact">
     <div class="contact-form">
         <h2>Send us a message</h2>
+        <!-- Contact Form  -->
         <form>
-            <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          
             <button type="submit">Send</button>
-        </form>
+          </form>
+          
     </div>
+    <!-- Table of hours of operation -->
     <div class="hours-of-operation">
         <h2>Hours of operation</h2>
         <table>
@@ -169,6 +184,7 @@
             </tbody>
         </table>
     </div>
+    <!-- Google map -->
     <div class="location">
         <h2>Location</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9444551569554!2d-75.75492570000003!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1700543676514!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -177,7 +193,7 @@
 
 </main>
 
- <!-- Footer -->
+ <!-- FOOTER SECTION -->
  
  <footer>
      <p>&copy; Copyright Three Star Media, 2020</p>
