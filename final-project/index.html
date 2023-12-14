@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
-    <!-- Icon styles -->
+    <!-- Font and Icon styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd07b8e9a3.js" crossorigin="anonymous"></script>
     <!-- reset css sheet -->
     <link rel="stylesheet" href="css/reset.css">
@@ -15,66 +16,62 @@
 <body>
 
 <!-- HEADER SECTION -->
-    <header class="masthead">
+<header class="masthead wrapper">
 
-        <!-- Nav Bar -->
-        <div class="header-bar">
-            <!-- Logo -->
-            <img src="images/logo.png" alt="Three Star Media Logo">
-            <nav class="main-nav">
-                <ul class="nav-items">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#ourteam">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- Search Bar Form -->
-                    <li>
-                        <form action="/search" method="get" class="search-bar">
-                            <input type="text" name="query" placeholder="Search" aria-label="Search">
-                            <button type="submit" aria-label="Submit Search">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </form>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Nav Bar -->
+    <div class="header-content">
+        <img src="images/logo.png" alt="Three Star Media Logo" class="logo">
+        <nav class="main-nav">
+            <ul class="nav-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#ourteam">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <form action="/search" method="get" class="search-bar">
+                        <input type="text" name="query" placeholder="Search" aria-label="Search">
+                        <button type="submit" aria-label="Submit Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
         
         <!-- Welcome Banner -->
-        <div class="banner">
-            <div class="banner-content">
+        <div id="banner-container">
+            <div class="banner">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
                 <a href="#contact" class="btn-connect">Connect with us <i class="fa fa-play"></i></a>
-            </div>
+             </div>
         </div>
 </header>
+                  
 
-
-<main class="content">    
+<main class="content">   
 
  <!-- ABOUT US SECTION --> 
-<section id="about">
-    <div class="about-container">
-        <div class="about-image">
-            <img src="images/about-us.jpg" alt="About Us">
-        </div>
+<section id="about" class="wrapper">
+    <div class="about-image">
+        <img src="images/about-us.jpg" alt="About Us">
+    </div>
 
-        <div class="about-content">
-            <h2>About Us</h2>
+    <div class="about-content">
+        <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
-          </div>
-    </div>
+     </div>
 </section>
     
 <!-- SERVICES SECTION --> 
-<section id="services">
+<section id="services" class="wrapper">
     <h2>Our Services</h2>
     
     <!-- starts div with grid services  -->
-    <div class="grid-services">
+<div class="grid-services">
 
     <!--Digital transformation-->
     <article class="service">
@@ -120,17 +117,17 @@
 </section>
 
 <!-- VISION SECTION --> 
-<section id="vision">
+<section id="vision" class="wrapper">
     <h2>Our Vision</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptatem deleniti lure, sir, accusantium rerum est commodi niam tempora perspiciatis nobis officiis fugiat eque. Veritatis exercitationem delectus ex ab laudantium.</p>
     <a href="#learn-more-vision" class="btn-learn-more">Learn More <i class="fa fa-play"></i></a>
-</section> 
+</section>  
 
 <!-- OUR TEAM SECTION --> 
-<section id="ourteam">
+<section id="ourteam" class="wrapper our-team">
     <h2>Our Team</h2>
-
-    <!--John-->
+    
+    <!-- John Doe -->
     <div class="team-member">
         <img src="images/john.jpg" alt="John Doe" class="team-photo">
         <div class="member-info">
@@ -140,8 +137,8 @@
             <p class="bio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
         </div>
     </div>
-
-    <!--Bob Rite-->
+    
+    <!-- Bob Rite -->
     <div class="team-member">
         <img src="images/bob.jpg" alt="Bob Rite" class="team-photo">
         <div class="member-info">
@@ -155,11 +152,11 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact">
+<section id="contact" class="wrapper">
     <h2>Contact Us</h2>
-    
     <div class="contact-form">
         <h3>Send us a message</h3>
+
         <!-- Contact Form  -->
         <form action="/submit" method="get">
             <label for="full-name">Full Name</label><br>
@@ -205,10 +202,10 @@
 
 </main>
 
- <!-- FOOTER SECTION -->
- <footer class="site-footer">
-     <p>&copy; Copyright Three Star Media, 2020</p>
-      <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
+<!-- FOOTER SECTION -->
+<footer class="site-footer wrapper">
+    <p>&copy; Copyright Three Star Media, 2020</p>
+    <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
 </footer> 
 
 </body>

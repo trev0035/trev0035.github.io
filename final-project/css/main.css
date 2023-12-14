@@ -1,0 +1,69 @@
+/******* Global Styles *************/
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+/* Ensures that font sizes are portionate to each other:  www.modularscale.com */
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 { 
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* HEADER STYLES */
+
+
