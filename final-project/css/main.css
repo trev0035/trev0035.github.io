@@ -207,7 +207,7 @@ main a {
 
 .grid-services {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
   
@@ -266,7 +266,7 @@ main a {
 
 #ourteam {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
 
@@ -295,12 +295,6 @@ main a {
 .member-info {
     margin-top: -15px;
 }
-
-.grid-services {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
 
 /*******************************
         CONTACT SECTION STYLES 
